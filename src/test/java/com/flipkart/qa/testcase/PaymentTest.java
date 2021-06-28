@@ -15,7 +15,7 @@ public class PaymentTest extends TestBase {
 	HomePage homepage;
 	SearchItems searchitems;
 	Payment payment;
-	public PaymentTest() {
+	public PaymentTest() throws Exception {
 		super();
 	}
 	@BeforeMethod
@@ -30,7 +30,7 @@ public class PaymentTest extends TestBase {
 		
 	}
 	@Test
-	public void proceedpayment() {
+	public void proceedpayment() throws Exception {
 		payment.proceedPayment();
 	}
 	@AfterMethod

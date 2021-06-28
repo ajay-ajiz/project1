@@ -4,9 +4,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -15,7 +18,11 @@ import com.flipkart.qa.util.TestUtil;
 public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
-	public TestBase() {
+	XSSFSheet sheet;
+	XSSFWorkbook wb;
+	HashMap<String,String> data;
+	
+	public TestBase()  {
 		  File file=new File("C:\\Users\\INFOSYS\\eclipse-workspace\\workspace\\project1\\src\\main\\java\\com\\flipkart\\qa\\config\\conf.properties");
 		  FileInputStream fileInput = null;
 		  try{
@@ -32,6 +39,8 @@ public class TestBase {
 		  catch (IOException e){
 			  e.printStackTrace();
 		  }
+		  
+
 		
 	}
 	public static void initialization() {

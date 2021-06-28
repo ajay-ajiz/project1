@@ -16,7 +16,7 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//div[@class=\"fMghEO\"]//ul[@class=\"_1xgFaf\"]//li[contains(text(),\"6 GB RAM\")][1]")
 	WebElement mi10;
 	
-	public HomePage() {
+	public HomePage()throws Exception {
 		PageFactory.initElements(driver, this);
 	}
 	public String validate_user() {

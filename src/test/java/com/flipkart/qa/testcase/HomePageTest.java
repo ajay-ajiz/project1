@@ -14,11 +14,11 @@ public class HomePageTest extends TestBase {
 	HomePage homepage;
 	LoginPage loginpage;
 	SearchItems Sitems;
-	public HomePageTest() {
+	public HomePageTest()throws Exception {
 		super();
 	}
 	@BeforeMethod
-	public void setUp() {
+	public void setUp()throws Exception {
 		initialization();
 		loginpage= new LoginPage();
 		homepage=loginpage.login(prop.getProperty("username"), prop.getProperty("password"));

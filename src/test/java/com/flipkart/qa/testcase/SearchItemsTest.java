@@ -16,7 +16,7 @@ public class SearchItemsTest extends TestBase{
 	HomePage homepage;
 	SearchItems search;
 	Payment payment;
-	public SearchItemsTest() {
+	public SearchItemsTest()throws Exception {
 		super();
 	}
 	
@@ -30,7 +30,7 @@ public class SearchItemsTest extends TestBase{
 		
 	}
 	@Test(priority=1)
-	public void order() {
+	public void order()throws Exception {
 		payment=search.orderIt();
 	}
 	@Test(priority=0)

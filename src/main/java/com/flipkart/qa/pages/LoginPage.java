@@ -15,7 +15,7 @@ public class LoginPage extends TestBase{
 	@FindBy(xpath="//button[@type=\"submit\" and @class=\"_2KpZ6l _2HKlqd _3AWRsL\"]")
 	WebElement submit;
 	
-	public LoginPage() {						//initializing page objects
+	public LoginPage()throws Exception {						//initializing page objects
 		PageFactory.initElements(driver, this);
 		
 	}
@@ -25,11 +25,12 @@ public class LoginPage extends TestBase{
 	}
 	
 	
-	public HomePage login(String un,String pwd) {
+	public HomePage login(String un,String pwd) throws Exception {
 		//login.click();
 		user.sendKeys(un);
 		password.sendKeys(pwd);
 		submit.submit();
+		Thread.sleep(300);
 		return new HomePage();
 	}
 }

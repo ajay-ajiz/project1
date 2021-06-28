@@ -13,7 +13,7 @@ public class SearchItems extends TestBase{
 	@FindBy (xpath="//button[@class=\"_2KpZ6l _2U9uOA ihZ75k _3AWRsL\"]")
 	WebElement orderit;
 	
-	public SearchItems() {
+	public SearchItems()throws Exception {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -22,7 +22,7 @@ public class SearchItems extends TestBase{
 		return s.substring(1);
 	}
 	
-	public Payment orderIt() {
+	public Payment orderIt() throws Exception {
 		orderit.click();
 		return new Payment();
 	}

@@ -17,7 +17,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws Exception {
 		initialization();
 		 loginpage=new LoginPage();
 		
@@ -29,7 +29,7 @@ public class LoginPageTest extends TestBase {
 		
 	}
 	@Test(priority=1)
-	public void login() {
+	public void login() throws Exception {
 		homepage=loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	

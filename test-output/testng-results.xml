@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40749" started-at="2021-06-28T02:41:38Z" finished-at="2021-06-28T02:42:19Z">
+  <suite name="Default suite" duration-ms="72601" started-at="2021-06-28T18:05:04Z" finished-at="2021-06-28T18:06:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40749" started-at="2021-06-28T02:41:38Z" finished-at="2021-06-28T02:42:19Z">
+    <test name="Default test" duration-ms="72601" started-at="2021-06-28T18:05:04Z" finished-at="2021-06-28T18:06:16Z">
       <class name="com.flipkart.qa.testcase.PaymentTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.testcase.PaymentTest@5f341870]" name="setUp" is-config="true" duration-ms="25457" started-at="2021-06-27T19:41:38Z" finished-at="2021-06-27T19:42:04Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.flipkart.qa.testcase.PaymentTest@5f341870]" name="setUp" is-config="true" duration-ms="29369" started-at="2021-06-28T11:05:04Z" finished-at="2021-06-28T11:05:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="proceedpayment()[pri:0, instance:com.flipkart.qa.testcase.PaymentTest@5f341870]" name="proceedpayment" duration-ms="15246" started-at="2021-06-27T19:42:04Z" finished-at="2021-06-27T19:42:19Z">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method status="FAIL" signature="proceedpayment()[pri:0, instance:com.flipkart.qa.testcase.PaymentTest@5f341870]" name="proceedpayment" duration-ms="43156" started-at="2021-06-28T11:05:33Z" finished-at="2021-06-28T11:06:16Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[element click intercepted: Element <div class="_2nxZhC">...</div> is not clickable at point (499, 575). Other element would receive the click: <div class="_2VWhrJ">...</div>
+              <![CDATA[element not interactable
   (Session info: chrome=91.0.4472.114)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-APBTOIM', ip: '192.168.210.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\INFOSYS\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 352b7e0ef2940eafe3591be8ddcb448d]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\INFOSYS\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 24fbaf4bc77836cbd4daf2292a7d6043]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="_2nxZhC">...</div> is not clickable at point (499, 575). Other element would receive the click: <div class="_2VWhrJ">...</div>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=91.0.4472.114)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-APBTOIM', ip: '192.168.210.210', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\INFOSYS\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 352b7e0ef2940eafe3591be8ddcb448d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\INFOSYS\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 24fbaf4bc77836cbd4daf2292a7d6043
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -48,7 +48,7 @@ Session ID: 352b7e0ef2940eafe3591be8ddcb448d
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.flipkart.qa.pages.Payment.proceedPayment(Payment.java:33)
+	at com.flipkart.qa.pages.Payment.proceedPayment(Payment.java:55)
 	at com.flipkart.qa.testcase.PaymentTest.proceedpayment(PaymentTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -77,11 +77,11 @@ Session ID: 352b7e0ef2940eafe3591be8ddcb448d
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- proceedpayment -->
-        <test-method status="PASS" signature="terminate()[pri:0, instance:com.flipkart.qa.testcase.PaymentTest@5f341870]" name="terminate" is-config="true" duration-ms="0" started-at="2021-06-27T19:42:19Z" finished-at="2021-06-27T19:42:19Z">
+        <test-method status="PASS" signature="terminate()[pri:0, instance:com.flipkart.qa.testcase.PaymentTest@5f341870]" name="terminate" is-config="true" duration-ms="1" started-at="2021-06-28T11:06:16Z" finished-at="2021-06-28T11:06:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
