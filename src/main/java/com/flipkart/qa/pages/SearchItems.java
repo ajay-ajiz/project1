@@ -18,11 +18,13 @@ public class SearchItems extends TestBase{
 	}
 	
 	public String validatePrice() {
+		log.debug("Validating Price of Item");
 		String s= actualprice.getText();
 		return s.substring(1);
 	}
 	
 	public Payment orderIt() throws Exception {
+		log.debug("Ordering item");
 		orderit.click();
 		return new Payment();
 	}

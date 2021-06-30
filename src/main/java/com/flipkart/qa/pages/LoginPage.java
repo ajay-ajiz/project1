@@ -21,12 +21,14 @@ public class LoginPage extends TestBase{
 	}
 	
 	public String vlaidateTitle() {
+		log.debug("Validating Title in LoginPage");
 		return driver.getTitle();
 	}
 	
 	
 	public HomePage login(String un,String pwd) throws Exception {
 		//login.click();
+		log.debug("Loggin to Flipkart");
 		user.sendKeys(un);
 		password.sendKeys(pwd);
 		submit.submit();

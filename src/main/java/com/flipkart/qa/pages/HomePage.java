@@ -20,11 +20,13 @@ public class HomePage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	public String validate_user() {
+		log.debug("Validating UserName");
 		String s=username.getText();
 		return s;
 	}
 	
 	public SearchItems search (String item) throws Exception {
+		log.debug("Searching Item");
 		searchbar.sendKeys(item);
 		searchbar.submit();
 		Thread.sleep(300);

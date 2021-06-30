@@ -1,5 +1,7 @@
 package com.flipkart.qa.testcase;
 
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -9,6 +11,7 @@ import com.flipkart.qa.base.TestBase;
 import com.flipkart.qa.pages.HomePage;
 import com.flipkart.qa.pages.LoginPage;
 import com.flipkart.qa.pages.SearchItems;
+import com.flipkart.qa.util.ExcelUtil;
 
 public class HomePageTest extends TestBase {
 	HomePage homepage;
@@ -29,10 +32,13 @@ public class HomePageTest extends TestBase {
 	
 	@Test(priority=1)
 	public void searchitem() throws Exception {
-		Sitems=homepage.search(prop.getProperty("item"));
+		//Sitems=homepage.search(prop.getProperty("item"));
+		Map<String,String>testData = ExcelUtil.getMap();
+
+		homepage.search(testData.get("product name"));
 		
 	}
-	//@Test(priority=0)
+	@Test(priority=0)
 	public void usernametest(){
 		String s=homepage.validate_user();
 		Assert.assertEquals(s, "Ajay");
@@ -41,6 +47,6 @@ public class HomePageTest extends TestBase {
 	
 	@AfterMethod
 	public void tearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 }

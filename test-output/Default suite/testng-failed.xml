@@ -5,9 +5,9 @@
     <classes>
       <class name="com.flipkart.qa.testcase.PaymentTest">
         <methods>
-          <include name="proceedpayment"/>
           <include name="setUp"/>
           <include name="terminate"/>
+          <include name="getMessage"/>
         </methods>
       </class> <!-- com.flipkart.qa.testcase.PaymentTest -->
     </classes>

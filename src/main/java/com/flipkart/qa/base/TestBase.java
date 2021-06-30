@@ -4,23 +4,21 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+//import java.util.logging.Logger;
 
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+//import org.testng.log4testng.Logger;
 
 import com.flipkart.qa.util.TestUtil;
 
 public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
-	XSSFSheet sheet;
-	XSSFWorkbook wb;
-	HashMap<String,String> data;
+	public static Logger log;
 	
 	public TestBase()  {
 		  File file=new File("C:\\Users\\INFOSYS\\eclipse-workspace\\workspace\\project1\\src\\main\\java\\com\\flipkart\\qa\\config\\conf.properties");
@@ -47,6 +45,8 @@ public class TestBase {
 		//String s=prop.getProperty("flipkart_url");
 		  System.setProperty("webdriver.chrome.driver","C:\\Users\\INFOSYS\\Desktop\\ajay\\chrome_driver\\chromedriver.exe");
 		  driver= new ChromeDriver();
+		  log = Logger.getLogger("Flipkart logger");
+		 
 		  driver.manage().window().maximize();
 		  driver.manage().deleteAllCookies();
 		  driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);

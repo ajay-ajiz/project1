@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test name="project1test(failed)" parallel="tests">
+  <listeners>
+    <listener class-name="com.flipkart.qa.base.ExtentReportListener"/>
+  </listeners>
+  <test name="flipkart(failed)" parallel="tests">
     <classes>
-      <class name="com.flipkart.qa.testcase.LoginPageTest">
+      <class name="com.flipkart.qa.testcase.PaymentTest">
         <methods>
           <include name="setUp"/>
-          <include name="titleTest"/>
-          <include name="login"/>
-          <include name="tearDown"/>
+          <include name="terminate"/>
+          <include name="getMessage"/>
         </methods>
-      </class> <!-- com.flipkart.qa.testcase.LoginPageTest -->
+      </class> <!-- com.flipkart.qa.testcase.PaymentTest -->
       <class name="com.flipkart.qa.testcase.HomePageTest">
         <methods>
           <include name="setUp"/>
@@ -18,6 +20,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.flipkart.qa.testcase.HomePageTest -->
+      <class name="com.flipkart.qa.testcase.SearchItemsTest">
+        <methods>
+          <include name="order"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.flipkart.qa.testcase.SearchItemsTest -->
     </classes>
-  </test> <!-- project1test(failed) -->
+  </test> <!-- flipkart(failed) -->
 </suite> <!-- Failed suite [Suite] -->
