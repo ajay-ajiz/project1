@@ -6,20 +6,6 @@
   </listeners>
   <test name="flipkart(failed)" parallel="tests">
     <classes>
-      <class name="com.flipkart.qa.testcase.PaymentTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="terminate"/>
-          <include name="getMessage"/>
-        </methods>
-      </class> <!-- com.flipkart.qa.testcase.PaymentTest -->
-      <class name="com.flipkart.qa.testcase.HomePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="searchitem"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.flipkart.qa.testcase.HomePageTest -->
       <class name="com.flipkart.qa.testcase.SearchItemsTest">
         <methods>
           <include name="order"/>

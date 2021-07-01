@@ -18,14 +18,13 @@ public class LoginPageTest extends TestBase {
 	
 	@BeforeMethod
 	public void setUp() throws Exception {
-		
 		initialization();
 		 loginpage=new LoginPage();
 		
 	}
 	@Test(priority=0)
 	public void titleTest() {
-		//log.debug("Validate page title");
+		log.debug("Validate page title");
 		log.debug("Validate Title");
 
 		String title=loginpage.vlaidateTitle();
